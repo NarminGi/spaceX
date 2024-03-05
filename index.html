@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpaceX</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                box-sizing: border-box;
+            }
+            .center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .first, .second {
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .first{
+                background-image: url('https://thebrandhopper.com/wp-content/uploads/2023/03/spacex-title.jpg');
+            }
+            .second{
+                background-image: url('https://scitechdaily.com/images/SpaceX-Starship-SN15-High-Altitude-Test.gif');
+            }
+            .nav-bar{
+                height: 15vh;
+                padding: 5vh;
+            }
+            nav > a {
+                font-size: 12px;
+                font-weight: bold;
+                margin: 0 15px;
+                float: left;
+            }
+            .nav-right{
+                float: right;
+            }
+            nav > a:hover{
+                text-decoration-line: underline;
+                text-decoration-color: black;
+            }
+            .main{
+                clear: right;
+            }
+            .info{
+                padding: 42vh 10vh 10vh 7vh;
+            }
+            .text{
+                font-size: 40px;
+                font-weight: bold;
+                margin: 2vh 0vh 8vh 0vh;
+                width: 80vh;
+            }
+            .button {
+                font-size: 12px;
+                font-weight: bold;
+                padding: 15px 45px;
+                border: 2px solid rgb(179, 178, 178);
+            }
+            .button:hover{
+                background-color: black;
+            }
+            .arrow{
+                padding-top: 5vh;
+                animation: moveDown 5s infinite alternate;
+            }
+            @keyframes moveDown {
+                0%, 100% {
+                    transform: translateY(0);
+                    opacity: 0;
+                }
+                50% {
+                    transform: translateY(20px);
+                    opacity: 1;
+                }
+            }
+            footer {
+                background-color: black;
+                height: 12vh;
+            }
+            footer > ul {
+                font-size: 10px;
+                font-weight: bold;
+                gap: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="first">
+                <div class="nav-bar">
+                    <nav>
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/SpaceX_Logo_Black.png" alt="SpaceX logo" width="130px;" height="30px"></a>
+                        <a href="#">Falcon 9</a>
+                        <a href="#">Falcon heavy</a>
+                        <a href="#">Dragon</a>
+                        <a href="#">Starship</a>
+                        <a href="#">Human spaceflight</a>
+                        <a href="#">Rideshare</a>
+                        <a href="#">Starshield</a>
+                        <a href="#">Starlink</a>
+                        <a class="nav-right">&#9776</a>
+                        <a href="#" class="nav-right">Shop</a>
+                    </nav>
+                </div>
+                <div class="main">
+                    <div class="info">
+                        <div>
+                            <p>Current mission</p>
+                            <p class="text">Ax3-3 mission</p>
+                        </div>
+                        <div>
+                            <a class="button" href="#">Rewatch</a>
+                        </div>
+                        <div class=" arrow center"> 
+                            <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" height="30px" width="30px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="second">
+                <div class="info">
+                    <div>
+                        <p>Recent launch</p>
+                        <p class="text">Starship's second flight test</p>
+                        <a class="button" href="#">Laern more</a>
+                    </div>
+                    <div class="arrow center">
+                        <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" height="30px" width="30px">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="center">
+            <ul class="center">
+                <li><a href="#">Spacex &copy; 2014</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Suppliers</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
